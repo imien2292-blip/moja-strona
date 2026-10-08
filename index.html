@@ -204,6 +204,75 @@
   }
 </style>
 
+<style>
+  .sekcja-pro {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 45px 25px;
+    text-align: center;
+  }
+
+  .sekcja-pro h2 {
+    font-size: clamp(26px, 4vw, 38px);
+    color: #a78bfa;
+    margin-bottom: 25px;
+  }
+
+  .sekcja-pro p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 15px auto;
+  }
+
+  .pro-grid {
+    display: grid;
+    grid-template-columns:
+      repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+  }
+
+  .pro-karta {
+    background: #17172b;
+    border: 1px solid #6d4aff;
+    border-radius: 18px;
+    padding: 30px 22px;
+    transition: 0.3s ease;
+  }
+
+  .pro-karta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px
+      rgba(139, 92, 246, 0.3);
+  }
+
+  .pro-karta h3 {
+    color: #b69aff;
+    margin-bottom: 15px;
+  }
+
+  .sekcja-pro details {
+    background: #17172b;
+    border: 1px solid #44346e;
+    border-radius: 12px;
+    margin: 12px auto;
+    padding: 20px;
+    max-width: 750px;
+    text-align: left;
+  }
+
+  .sekcja-pro summary {
+    cursor: pointer;
+    color: #d8c8ff;
+    font-weight: bold;
+  }
+
+  .sekcja-pro details p {
+    margin-top: 12px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -256,6 +325,89 @@
    class="btn">
     Napisz wiadomość
    </a>
+</section>
+
+<section id="o-nas" class="sekcja-pro">
+  <h2>Kim jesteśmy?</h2>
+  <p>
+    Tworzymy nowoczesne rozwiązania internetowe,
+    które pomagają rozwijać pomysły i biznesy.
+    Stawiamy na estetyczny wygląd, szybkość
+    działania oraz wygodę użytkowników.
+  </p>
+  <p>
+    Naszym celem jest projektowanie stron
+    i aplikacji dopasowanych do potrzeb
+    każdego projektu.
+  </p>
+</section>
+
+<section id="dlaczego-my" class="sekcja-pro">
+  <h2>Dlaczego warto nas wybrać?</h2>
+
+  <div class="pro-grid">
+    <div class="pro-karta">
+      <h3>⚡ Szybkość</h3>
+      <p>Dbamy o wydajność i płynne działanie stron.</p>
+    </div>
+
+    <div class="pro-karta">
+      <h3>🎨 Nowoczesny design</h3>
+      <p>Projektujemy przejrzyste i atrakcyjne interfejsy.</p>
+    </div>
+
+    <div class="pro-karta">
+      <h3>📱 Responsywność</h3>
+      <p>Tworzymy projekty dostosowane do telefonów,
+      tabletów i komputerów.</p>
+    </div>
+  </div>
+</section>
+
+<section id="proces" class="sekcja-pro">
+  <h2>Jak wygląda współpraca?</h2>
+
+  <div class="pro-grid">
+    <div class="pro-karta">
+      <h3>01. Rozmowa</h3>
+      <p>Poznajemy pomysł i potrzeby projektu.</p>
+    </div>
+
+    <div class="pro-karta">
+      <h3>02. Projekt</h3>
+      <p>Przygotowujemy wygląd i układ strony.</p>
+    </div>
+
+    <div class="pro-karta">
+      <h3>03. Realizacja</h3>
+      <p>Tworzymy i testujemy rozwiązanie.</p>
+    </div>
+
+    <div class="pro-karta">
+      <h3>04. Publikacja</h3>
+      <p>Przygotowujemy stronę do uruchomienia.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="sekcja-pro">
+  <h2>Najczęściej zadawane pytania</h2>
+
+  <details>
+    <summary>Jak długo trwa stworzenie strony?</summary>
+    <p>Czas zależy od wielkości i wymagań projektu.</p>
+  </details>
+
+  <details>
+    <summary>Czy strona działa na telefonach?</summary>
+    <p>Projektujemy strony z myślą o różnych ekranach.</p>
+  </details>
+
+  <details>
+    <summary>Czy można później rozbudować stronę?</summary>
+    <p>Tak, dobrze przygotowany projekt można
+    rozwijać o nowe funkcje.</p>
+  </details>
 </section>
 
     <footer>
