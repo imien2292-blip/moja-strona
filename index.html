@@ -157,6 +157,36 @@
             }
         }
     </style>
+    
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @keyframes pojawianie {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h1 {
+    animation: pojawianie 1s ease-out;
+  }
+
+  button, .btn {
+    transition: transform 0.3s ease;
+  }
+
+  button:hover, .btn:hover {
+    transform: scale(1.05);
+  }
+</style>
+
 </head>
 
 <body>
