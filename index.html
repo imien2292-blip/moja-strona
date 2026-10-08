@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Firma IT</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #0b0b16;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        nav {
+            background: #141426;
+            padding: 25px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+        }
+
+        .hero {
+            padding: 110px 20px 130px;
+            animation: wejscie 1.2s ease;
+        }
+
+        h1 {
+            font-size: clamp(32px, 6vw, 55px);
+        }
+
+        h1 span {
+            color: #8b5cf6;
+        }
+
+        p {
+            color: #aaaaaa;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #8b5cf6;
+            color: white;
+            padding: 16px 35px;
+            border: none;
+            border-radius: 12px;
+            font-size: 17px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #6d28d9;
+            transform: scale(1.08);
+            box-shadow: 0 0 30px #8b5cf6;
+        }
+
+        #oferta {
+            padding: 80px 20px 120px;
+            scroll-margin-top: 70px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        .uslugi {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .kafelek {
+            background: #19192d;
+            padding: 35px;
+            width: 280px;
+            border-radius: 18px;
+            border: 1px solid #30304a;
+            transition: 0.3s ease;
+        }
+
+        .kafelek:hover {
+            transform: translateY(-12px);
+            border-color: #8b5cf6;
+            box-shadow: 0 0 35px #8b5cf688;
+        }
+
+        .kafelek h3 {
+            color: #a78bfa;
+            font-size: 23px;
+        }
+
+        #kontakt {
+            padding: 80px 20px 120px;
+            background: #111122;
+            scroll-margin-top: 70px;
+        }
+
+        footer {
+            padding: 25px;
+            background: #090911;
+            color: #888888;
+        }
+
+        @keyframes wejscie {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                margin: 8px;
+            }
+
+            .hero {
+                padding: 80px 15px;
+            }
+
+            .kafelek {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#start">Start</a>
+        <a href="#oferta">Oferta</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section class="hero" id="start">
+        <h1>Witaj w <span>przyszłości IT</span></h1>
+        <p>Tworzymy nowoczesne rozwiązania dla Twojego biznesu.</p>
+        <a href="#oferta" class="btn">Poznaj nas</a>
+    </section>
+
+    <section id="oferta">
+        <h2>Nasza oferta</h2>
+        <p>Poznaj nasze usługi</p>
+
+        <div class="uslugi">
+
+            <div class="kafelek">
+                <h3>🌐 Strony WWW</h3>
+                <p>Tworzymy nowoczesne strony internetowe dla firm.</p>
+            </div>
+
+            <div class="kafelek">
+                <h3>💻 Aplikacje</h3>
+                <p>Projektujemy szybkie i nowoczesne aplikacje.</p>
+            </div>
+
+            <div class="kafelek">
+                <h3>🚀 Rozwój biznesu</h3>
+                <p>Pomagamy firmom rozwijać się w internecie.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Masz pomysł na projekt? Napisz do nas!</p>
+
+    <p>Email: imien2292@gmail.com</p>
+
+   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=imien2292@gmail.com"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn">
+    Napisz wiadomość
+   </a>
+</section>
+
+    <footer>
+        <p>© 2026 Moja Firma IT. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
